@@ -15,6 +15,11 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: Nike-azure-test@0
+  inputs: 
+    samplestring: 'yo yo'
+  displayName: 'this is it'
+
 - script: |
     npm install
     npm run build
