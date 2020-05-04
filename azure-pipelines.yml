@@ -20,6 +20,11 @@ steps:
     samplestring: 'yo yo'
   displayName: 'this is it'
 
+- task: customtask@0
+  inputs: 
+    samplestring: 'new string'
+  displayName: 'this is it, the sequel'
+
 - script: |
     npm install
     npm run build
